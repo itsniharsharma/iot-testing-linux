@@ -1,0 +1,13 @@
+# Configuration file
+device:
+  protocol: mqtt
+  broker: localhost
+  topic: sensor/temp
+
+rules:
+  min_temp: 0
+  max_temp: 100
+  required_fields:
+    - temperature
+    - timestamp
+  max_interval_sec: 5
